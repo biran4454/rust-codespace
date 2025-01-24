@@ -1,0 +1,49 @@
+// https://aka.ms/devcontainer.json
+// https://github.com/devcontainers/templates/tree/main/src/rust
+// https://containers.dev/features
+// https://containers.dev/guide/dockerfile
+
+{
+	"name": "Rust",
+	
+	"build": {
+        "dockerfile": "./Dockerfile",
+        "context": "."
+    },
+
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        },
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+		},
+        "ghcr.io/devcontainers/features/rust:1": "latest",
+		"ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        }
+    },
+
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "rustc --version",
+
+	"remoteUser": "vscode"
+}

@@ -1,0 +1,8 @@
+[package]
+name = "my_program"
+version = "0.1.0"
+authors = ["Biran4454 <biran4454@gmail.com>"]
+
+[lib]
+path ="./src/lib/lib.rs"
+

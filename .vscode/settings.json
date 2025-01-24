@@ -1,0 +1,19 @@
+{
+    "search.exclude": {
+        "**/target": true
+    },
+    "lldb.verboseLogging": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "json": false,
+        "log": false,
+        "ignore": false,
+        "properties": false,
+        "jsonc": false,
+    },
+}
