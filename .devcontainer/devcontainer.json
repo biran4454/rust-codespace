@@ -4,12 +4,9 @@
 // https://containers.dev/guide/dockerfile
 
 {
-	"name": "Rust",
+    "name": "Rust",
 	
-	"build": {
-        "dockerfile": "./Dockerfile",
-        "context": "."
-    },
+    "image": "ghcr.io/biran4454/rust-codespace:latest",
 
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
