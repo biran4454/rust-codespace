@@ -3,8 +3,15 @@
         "**/target": true
     },
     "lldb.verboseLogging": true,
+    "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
+
+    "workbench.colorTheme": "Deepdark Material Theme | Full Black Version",
+    "workbench.colorCustomizations": {
+        "editor.findMatchBackground": "#e2dc77",
+        "editorBracketMatch.border":"#767675"
+    },
 
     "github.copilot.enable": {
         "*": false,
